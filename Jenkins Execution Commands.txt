@@ -1,0 +1,5 @@
+# Clean up old report folder first
+rm -rf ./dashboard-report
+
+# Run JMeter and generate HTML dashboard
+jmeter -n -t "parallel execution performance test.jmx" -l results.jtl -e -o ./dashboard-report
